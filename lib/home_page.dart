@@ -67,6 +67,8 @@ class CustomSearchDelegate extends SearchDelegate {
         icon: Icon(Icons.arrow_back));
   }
 
+
+  // Executed when user pressed search button on soft keyboard
   @override
   Widget buildResults(BuildContext context) {
     print("Result build");
@@ -86,6 +88,8 @@ class CustomSearchDelegate extends SearchDelegate {
     );
   }
 
+
+  // Executed everytime user inputted a character in textfield
   @override
   Widget buildSuggestions(BuildContext context) {
     print("Suggestion build");
